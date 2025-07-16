@@ -27,17 +27,19 @@ const NavBar = () => {
 
   // Smooth scroll handler for hash links
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    if (href.startsWith("/#")) {
-      const id = href.split("#")[1];
-      const el = document.getElementById(id);
-      if (el) {
-        e.preventDefault();
-        el.scrollIntoView({ behavior: "smooth" });
-        // Optionally update the URL hash
-        window.history.pushState(null, "", href);
-      }
+  if (href.startsWith("/#")) {
+    e.preventDefault(); // Prevent default link behavior for smooth scroll
+    const id = href.split("#")[1];
+    const el = document.getElementById(id);
+
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" }); // Smooth scrolling
+      window.history.pushState(null, "", href); // Update the URL hash
     }
-  };
+  }
+
+  // Allow the default behavior if it's a normal link
+};
 
   return (
     <nav className='h-16 bg-background/60 sticky top-0 border-b backdrop-blur flex px-6 justify-between items-center self-stretch z-20'>
@@ -89,7 +91,9 @@ const NavBar = () => {
       </div>
       <div className='flex md:hidden'>
       <Sheet open={open} onOpenChange={setOpen}>
-        <SheetTrigger><MenuIcon/></SheetTrigger>
+        <SheetTrigger role="button" tabIndex={0} aria-label="Open menu">
+        <MenuIcon />
+      </SheetTrigger>
         <SheetContent>
           <SheetHeader>
             <SheetTitle className='text-center'>Menu</SheetTitle>
@@ -98,10 +102,12 @@ const NavBar = () => {
       <React.Fragment key={key}>
         <a
           href={item.href}
+          role="menuitem" // Add semantic role
+          tabIndex={0} // Ensure focusability
           className="text-foreground/80 hover:text-primary transition-colors duration-300 text-center"
-          onClick={e => {
+          onClick={(e) => {
             handleNavClick(e, item.href);
-            setOpen(false);
+            setOpen(false); // Ensure the menu closes
           }}
         >
           {item.name}
