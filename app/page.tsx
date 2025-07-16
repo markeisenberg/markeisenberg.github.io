@@ -23,7 +23,7 @@ const Page = () => {
         />
         <link
           rel="icon"
-          href="/favicon.ico"
+          href="/icon.svg"
           type="image/x-icon"
           sizes="16x16"
         />

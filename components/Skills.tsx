@@ -70,7 +70,7 @@ export function Skills() {
         </p>
         <div className="p-2 text-center flex justify-center gap-6">
           <Button variant="outline" asChild>
-            <a href="/Mark Portfolio 2025.pdf" download>
+            <a href="/docs/Mark Portfolio 2025.pdf" download>
             <Download /> Download Creative CV 
             </a>
           </Button>
