@@ -75,7 +75,7 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
         # Run Contentlayer build (added step)
       - name: Run Contentlayer Build
-        run: ${{ steps.detect-package-manager.outputs.runner }} contentlayer build
+        run: ${{ steps.detect-package-manager.outputs.runner }} contentlayer2 build
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Upload artifact
