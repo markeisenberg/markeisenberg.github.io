@@ -2,11 +2,12 @@
   "name": "markeisenberg.github.io",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://markeisenberg.github.io/",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "export": "next export",
-    "deploy": "gh-pages -d out",
+    "deploy": "npm run build && npm run export && gh-pages -d out",
     "start": "next start",
     "lint": "next lint"
   },
