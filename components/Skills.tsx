@@ -68,33 +68,33 @@ export function Skills() {
         <p className="text-center text-muted-foreground max-w-2xl mx-auto">
           Browse my skills and interests below or
         </p>
-        <div className="p-2 text-center flex justify-center gap-6">
-          <Button variant="outline" asChild>
-            <a href="/docs/Mark Portfolio 2025.pdf" download>
+        <div className="p-2 text-center flex flex-col md:flex-row justify-center gap-6">
+        <Button variant="outline" asChild>
+          <a href="/docs/Mark Portfolio 2025.pdf" download>
             <Download /> Download Creative CV 
-            </a>
-          </Button>
-          <Button variant="outline" asChild>
-            <a href="https://docs.google.com/document/d/1hY2eimrfBXPZvMn7wiH7GWhtx0SwIX0UlYEzqLlFnaY/edit?usp=sharing" target="_blank" download>
+          </a>
+        </Button>
+        <Button variant="outline" asChild>
+          <a href="https://docs.google.com/document/d/1hY2eimrfBXPZvMn7wiH7GWhtx0SwIX0UlYEzqLlFnaY/edit?usp=sharing" target="_blank" download>
             <FileText /> View Written CV Online <ExternalLink />
-            </a>
-          </Button>
-        </div>
+          </a>
+        </Button>
+      </div>
 
         <Tabs defaultValue="research" className="w-full">
           {/* Tabs List */}
           <TabsList className="w-full flex justify-evenly border-gray-200 h-12">
             <TabsTrigger value="research" className="flex items-center gap-2">
               <User size={16} className="text-gray-500" />
-              UX Research
+              <span className="hidden md:inline">UX Research</span>
             </TabsTrigger>
             <TabsTrigger value="design" className="flex items-center gap-2">
               <Palette size={16} className="text-gray-500" />
-              UX/UI Design
+              <span className="hidden md:inline">UX/UI Design</span>
             </TabsTrigger>
             <TabsTrigger value="dev" className="flex items-center gap-2">
               <MonitorSmartphone size={16} className="text-gray-500" />
-              Web Design
+              <span className="hidden md:inline">Web Design</span>
             </TabsTrigger>
           </TabsList>
 
@@ -103,7 +103,7 @@ export function Skills() {
             <TabsContent value="research">
               <div className="flex flex-wrap md:flex-nowrap md:gap-6 gap-4">
                 {/* Left Card */}
-                <Card className="flex-1 h-fit">
+                <Card className="flex-1 h-fit min-w-0 max-w-full p-4">
                   <CardHeader>
                     <CardTitle>UX Research</CardTitle>
                     <CardDescription>
@@ -130,7 +130,7 @@ export function Skills() {
                     >
                       <RadarChart data={chartDataUXR}>
                         <ChartTooltip cursor={false} content={<ChartTooltipContent />} />
-                        <PolarAngleAxis dataKey="skill" />
+                        <PolarAngleAxis dataKey="skill"/>
                         <PolarGrid />
                         <Radar
                           dataKey="desktop"
@@ -172,7 +172,7 @@ export function Skills() {
             <TabsContent value="design">
               <div className="flex flex-wrap md:flex-nowrap md:gap-6 gap-4">
                 {/* Left Card */}
-                <Card className="flex-1 h-fit">
+                <Card className="flex-1 h-fit min-w-0 max-w-full p-4">
                   <CardHeader>
                     <CardTitle>UX / UI Design</CardTitle>
                     <CardDescription>
@@ -242,7 +242,7 @@ export function Skills() {
             <TabsContent value="dev">
               <div className="flex flex-wrap md:flex-nowrap md:gap-6 gap-4">
                 {/* Left Card */}
-                <Card className="flex-1 h-fit">
+                <Card className="flex-1 h-fit min-w-0 max-w-full p-4">
                   <CardHeader>
                     <CardTitle>Web Design / Development</CardTitle>
                     <CardDescription>
