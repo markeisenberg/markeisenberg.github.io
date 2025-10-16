@@ -1,7 +1,7 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const CURSOR_IMG = "https://media.licdn.com/dms/image/v2/C4D03AQHSDWzxgN8gLg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1547561933608?e=1756339200&v=beta&t=_m_bCI0P_Fs050tj9F-chdtI13PUESP_7o-psAbGbnI"; // Example image URL
+const CURSOR_IMG = "https://previews.dropbox.com/p/thumb/ACxdBgXHOZHU67v29RHe89hCo6Qsyj4vSlfH4zE_A_5aJYG08isFwj75NKCp7H6r86bBLMZLXcNASCu28Pk4j4wQue47fn7kxMsj7E5InQC_3EIVcaFPK_7MxbjSYnvNXD7YbWo9gXNwTAWTetwi6CRm8waJBqz15jeIsmC00IGAYum2jzwkS7qHKtmzcehCXu92IfQFHaK8UdJrT9aY3kIeobIkTG4TcpvGMqHkxDT6VXIfraeiCI_pDsj1QiaookZ44Rzf92tZ7UWY6XrtfIH8xpr1FxrSPoypj5bc3rnHmQfE6VWdy0DKwVFmv71C3T9zE3yjYt6zqp_0AX9KlUju/p.jpeg?is_prewarmed=true"; // Example image URL
 
 export const AvatarCursor = ({ x, y, visible, size = 64, imgSize = 64 }) => {
     return (
