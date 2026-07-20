@@ -75,7 +75,7 @@ export function Skills() {
           </a>
         </Button>
         <Button variant="outline" asChild>
-          <a href="https://docs.google.com/document/d/1hY2eimrfBXPZvMn7wiH7GWhtx0SwIX0UlYEzqLlFnaY/edit?usp=sharing" target="_blank" download>
+          <a href="https://drive.proton.me/urls/G6G2NBGTNR#tWoex4u3QMDd" target="_blank" download>
             <FileText /> View Written CV Online <ExternalLink />
           </a>
         </Button>
