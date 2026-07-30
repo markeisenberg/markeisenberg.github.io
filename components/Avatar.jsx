@@ -1,7 +1,7 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const CURSOR_IMG = "https://previews.dropbox.com/p/thumb/ACxdBgXHOZHU67v29RHe89hCo6Qsyj4vSlfH4zE_A_5aJYG08isFwj75NKCp7H6r86bBLMZLXcNASCu28Pk4j4wQue47fn7kxMsj7E5InQC_3EIVcaFPK_7MxbjSYnvNXD7YbWo9gXNwTAWTetwi6CRm8waJBqz15jeIsmC00IGAYum2jzwkS7qHKtmzcehCXu92IfQFHaK8UdJrT9aY3kIeobIkTG4TcpvGMqHkxDT6VXIfraeiCI_pDsj1QiaookZ44Rzf92tZ7UWY6XrtfIH8xpr1FxrSPoypj5bc3rnHmQfE6VWdy0DKwVFmv71C3T9zE3yjYt6zqp_0AX9KlUju/p.jpeg?is_prewarmed=true"; // Example image URL
+const CURSOR_IMG = "https://previews.dropbox.com/p/thumb/ADFijG2jLjYv-I7WfYSVGpZMm4084842hszvBiwB6V_MwB16c45cPtpIIaYTDH75H3GVmefgL4nBMWz9n6plbsWq6CLqFCI6xVGH0bimIWsQ09c2DkIaXD2KYnvYoEIYGVLpgAP_zxSEm-mMo-fjdw2nmm-wX5Lv4fWqZHvHLZuh70DC6gtj4ias8LClPL9klQeYPPd_ipp6RMeEAK3AVE07Ml9NVkBxctNtxY0SBGMifTIuerF18jm_3-3WTotCUGb5p7Sws8JmqaHWXiffxn_OAHCrwS-lxTaq-BOUPT--AQ/p.jpeg"; // Example image URL
 
 export const AvatarCursor = ({ x, y, visible, size = 64, imgSize = 64 }) => {
     return (
