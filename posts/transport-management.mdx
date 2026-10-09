@@ -1,0 +1,38 @@
+---
+title: "Transport Management & Logistics"
+date: 2026-10-09
+summary: "Transport Management & Logistics case study."
+imageUrl: "/images/hero.png"
+featured: true
+slug: "transport-management"
+---
+
+## Context
+
+I was brought in to assist with the research and design of new features being applied to the Transport Management software, which focused heavily on maps and tracking routes. It gave me practical experience visiting customers and inquiring how they were operating with the software before and while using the main Transport app. Ultimately, there was a requirement to be able to “group” stops into trips, which would help visualise complex routes. There were two major screens where making and organising Trips was important.
+
+## The problem
+
+Filtering was not sufficient to be able to plan a route and it was cumbersome to add a single item at a time. Essentially the ability to bulk add was missing.
+
+## Research / discovery
+
+The concept of trips was existing in older software offered by AMCS. Customer visits confirmed that grouping stops would support pre-planning. Pre-planning, from multiple meetings with customers and visiting in person, is a known practice where you organise your workload in advance to act on at a later point. This grouping feature would help to address that.
+
+## Design decisions
+
+The list of items we used had a large clickable/draggable area on them, so we wanted to maintain that interaction when dragging trips. A “play and stop” iconography was chosen as it represents a common conception of beginning and end. The trips were bookended by lines to make the difference between trips more obvious. When dragging the trip, the draggable item was condensed into a smaller box to make the placement simpler. The Visual feedback, a line or dotted box on the drop area, made it obvious where a group could be placed. This pattern is common in other list software where users can drag and drop.
+
+![Diagram: Personas for transport management](/images/tms.png)
+
+## Collaboration
+
+There were with regular meetings with a Product Owner and developers via refinements and demos. We worked through prioritization lists, largely via a virtual whiteboard (Miro) to bring the most useful changes to the customer first.
+
+## Iteration
+
+Later on, some of the draggable cards in the list became narrower as we were implementing a new technology across the application called AG-Grid for our tables. This new component presented an opportunity to both improve the performance and use the drag-and-drop function to work with the transport management apps. The interaction patterns were largely compatible, only the base UI changed.
+
+## Outcome
+
+Filtering became significantly easier through the combination of a new filter button and the use of AG-Grid. This gave the user more flexibility to search, which was a surprise bonus that the customers expressed happiness about when presented with the new release.

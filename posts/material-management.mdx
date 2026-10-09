@@ -1,0 +1,38 @@
+---
+title: "Material Management"
+date: 2026-10-09
+summary: "Material Management case study."
+imageUrl: "/images/metal.jpg"
+featured: false
+slug: "material-management"
+---
+
+## Context
+
+This project was overall quite large and took place piecemeal over several years. It involved moving functionality from legacy software to a WebUI and porting some functionality to a mobile device, based on context and user access rights. This example involved the creation of screens that made it possible to track materials, quality and prices.
+
+## The problem
+
+Customers were using either multiple software products or manual sheets or excel documents to keep track and make actions on their inventory and the orders. Pricing discrepancies occurred and were often delayed because the information was not easily accessible.
+
+## Research / discovery
+
+We discovered from meetings with Material Graders and customer tickets that there was information unavailable or being lost in the notes between the Customer Service (CSR) screens and Material Management. The terminology used as well was inconsistent.
+
+## Design decisions
+
+This led us to the creation of a central taxonomy for the notes created and shared between the Materials and CSR so that both would update with accurate notes. This meant changing from read-only fields to a dynamic list attached to materials, allowing for it to be more reliable. A list-based approach meant the end user was more sure of the options they had to communicate pricing and other material changes.
+
+![Diagram: Multi-device flow for Production Shift](/images/materials.png)
+
+## Collaboration
+
+I worked with the PO and PMs for Materials and CSR respectively to establish and verify the typical language used by the Material Traders.
+
+## Iteration
+
+There was initially one flat list to choose from the available taxonomy or list. From discussions with the Material Grader, this was broken down into more digestible and relevant sections using access rights and system logic.
+
+## Outcome
+
+The stakeholders and users were grateful that they did not have to start from scratch when writing about grading disputes and meant that there was a consistent language between the CSR and Materials workcenters.
